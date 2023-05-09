@@ -16,7 +16,7 @@ main{
 
 .result{
     width: 30%;
-    height: 20vh;
+    height: 25vh;
     border: 5px solid violet;
     background-color: rgb(0, 0, 0);
     margin-left: auto;
@@ -26,6 +26,30 @@ main{
     margin-top: 20px ;
 }
 
+#nb1{
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+#nb2{
+    font-size: 30px;
+}
+#ope{
+    margin-top: 5%;
+    margin-left: 80%;
+    font-size: 30px;
+}
+
+#resultat{ 
+    padding-top: 40px;
+    font-size: 50px;
+
+}
+
+#ac{
+    width: 40%;
+    background-color: rgba(255, 0, 0, 0.627);
+}
 
 .pave{
     width: 30%;
