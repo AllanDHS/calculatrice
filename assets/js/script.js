@@ -24,6 +24,11 @@ let soustraction = document.getElementById('-')
 let addition = document.getElementById('+')
 let display = nb1
 let equal = document.getElementById('equal')
+let point = document.getElementById(',')
+let virgule = 0
+
+
+
 
 one.addEventListener('click', function () {
     display.innerText += one.innerText
@@ -61,28 +66,43 @@ zero.addEventListener('click', function () {
 division.addEventListener('click', function () {
     ope.innerText = division.innerText
     display = nb2
+    virgule = 0
 })
 
 multiplication.addEventListener('click', function () {
     ope.innerText = multiplication.innerText
     display = nb2
+    virgule = 0
 })
 
 soustraction.addEventListener('click', function () {
     ope.innerText = soustraction.innerText
     display = nb2
+    virgule = 0
 })
 
 addition.addEventListener('click', function () {
     ope.innerText = addition.innerText
     display = nb2
+    
 })
 
-ac.addEventListener('click',function(){
-    nb1.innerText=""
-    nb2.innerText=""
-    ope.innerText=""
-    resultat.innerText=""
+
+point.addEventListener('click', function () {
+
+    if (virgule == 0) {
+        display.innerText += point.innerText
+        virgule = 1
+    }
+})
+
+
+
+ac.addEventListener('click', function () {
+    nb1.innerText = ""
+    nb2.innerText = ""
+    ope.innerText = ""
+    resultat.innerText = ""
     display = nb1
 })
 
@@ -90,10 +110,9 @@ ac.addEventListener('click',function(){
 
 equal.addEventListener('click', function () {
     let result = 0
-    console.log(nb1 ,nb2)
     switch (ope.innerText) {
         case '+':
-          result =  parseFloat(nb1.innerText) + parseFloat(nb2.innerText)
+            result = parseFloat(nb1.innerText) + parseFloat(nb2.innerText)
             break;
         case '-':
             result = parseFloat(nb1.innerText) - parseFloat(nb2.innerText)
