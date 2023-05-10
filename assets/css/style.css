@@ -27,7 +27,7 @@ main{
 }
 
 #nb1{
-    padding-top: 10px;
+    
     font-size: 30px;
 }
 
@@ -41,7 +41,7 @@ main{
 }
 
 #resultat{ 
-    padding-top: 40px;
+   
     font-size: 50px;
 
 }
@@ -64,6 +64,7 @@ main{
     background-color: rgba(137, 43, 226, 0.528);
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .pave .line-4  span button{
@@ -75,11 +76,17 @@ main{
     background-color: rgba(19, 237, 19, 0.524);
 }
 
+
+button:focus{
+    background-color: rgba(0, 255, 255, 0.496);
+}
+
+
 @media screen and (max-width:390px) {
 
     .result{
         width: 300px;
-        height: 200px;
+        height: 150px;
     }
     .pave{
         width: 300px;
@@ -93,5 +100,6 @@ main{
     }
     #resultat{
         font-size: 30px;
+        padding-top: 10px;
     }
 }
