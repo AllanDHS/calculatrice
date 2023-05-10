@@ -84,6 +84,7 @@ soustraction.addEventListener('click', function () {
 addition.addEventListener('click', function () {
     ope.innerText = addition.innerText
     display = nb2
+    virgule = 0
     
 })
 
@@ -104,6 +105,7 @@ ac.addEventListener('click', function () {
     ope.innerText = ""
     resultat.innerText = ""
     display = nb1
+    virgule = 0 
 })
 
 
@@ -124,7 +126,7 @@ equal.addEventListener('click', function () {
             result = parseFloat(nb1.innerText) / parseFloat(nb2.innerText)
             break;
     }
-    resultat.innerText = result
+    resultat.innerText = result.toFixed(5)
 })
 
 

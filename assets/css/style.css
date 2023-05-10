@@ -23,7 +23,7 @@ main{
     margin-right: auto;
     color: white;
     border-radius: 15px;
-    margin-top: 20px ;
+    
 }
 
 #nb1{
@@ -35,7 +35,7 @@ main{
     font-size: 30px;
 }
 #ope{
-    margin-top: 5%;
+    
     margin-left: 80%;
     font-size: 30px;
 }
@@ -79,11 +79,19 @@ main{
 
     .result{
         width: 300px;
+        height: 200px;
     }
-
-
     .pave{
         width: 300px;
         
+    }
+    #nb1{
+        font-size: 25px;
+    }
+    #nb2{
+        font-size:25px;
+    }
+    #resultat{
+        font-size: 30px;
     }
 }
